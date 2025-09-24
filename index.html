@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SamsGamingZone.com | Sandbox Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { background: #171010; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; }
+    header { background: linear-gradient(90deg, #c80000 70%, #2b121a 100%); padding: 2rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; color: #ffeded; margin: 0 0 0.6em 0; font-weight: bold; }
+    .cta-btn { background: #ff2525; color: #fff; border: none; border-radius: 32px; font-size: 1.25rem; padding: 0.75em 2em; margin-top: 1em; cursor: pointer; font-weight: bold; box-shadow: 0 0 12px #b20000; }
+    .cta-btn:hover { background: #c50808; }
+    main { max-width: 900px; margin: 2em auto; background: rgba(40,0,0,0.86); padding: 2em 1em 2em; border-radius: 18px; box-shadow: 0 0 32px #9e141592; }
+    .games-list ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 1.2em; }
+    .games-list li { background: #2a1010; color: #ffdada; border-radius: 1em; padding: 0.55em 1.3em; font-weight: 600; box-shadow: 0 0 6px #ff252564; }
+    .redeem-section { margin-top: 2em; }
+    .redeem-section label { color: #ffe3e3; }
+    .redeem-section input, .redeem-section select { padding: 0.5em; border: none; border-radius: 10px; background: #441a28; color: #fff; margin-right: .7em; }
+    .redeem-section button { background: #ff3131; color: #fff; border: none; border-radius: 11px; font-size: 1.1em; padding: 0.5em 1.3em; margin-top: 1em; font-weight: bold; }
+    .redeem-section button:hover { background: #bb1717; }
+    .info { margin: 1em 0 0.5em; color: #fbb; }
+    .howto-videos { display: flex; flex-wrap: wrap; gap: 1em; margin-top: 1.5em; }
+    .howto-video { flex: 1 0 250px; background: #1a0606; border-radius: 12px; padding: 1em; box-shadow: 0 0 7px #77262661; min-width: 260px; }
+    .howto-video iframe { border-radius: 8px; width: 100%; min-height: 180px; }
+    footer { margin-top: 2em; background: #290909; color: #ffd2d2; text-align: center; padding: 1.2em 0; border-top: 2px solid #aa3333; }
+    @media(max-width: 900px) { .howto-videos { flex-direction: column; } main { padding: 1em 0.2em; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SamsGamingZone.com</h1>
+    <div>Experience the Rush—Play, Win, Redeem Instantly!</div>
+    <button class="cta-btn" onclick="window.scrollTo({top:700,behavior:'smooth'})">Start Playing Now</button>
+  </header>
+  <main>
+    <section class="games-list">
+      <h2>Game Systems Supported</h2>
+      <ul>
+        <li>Golden Dragon</li>
+        <li>Fire Kirin</li>
+        <li>Milky Way</li>
+        <li>Panda Master</li>
+        <li>River Sweeps</li>
+        <li>Orion Stars</li>
+        <li>Magic City</li>
+        <li>Ultra Panda</li>
+        <li>VBlink</li>
+        <li>Juwa</li>
+      </ul>
+    </section>
+    <section class="redeem-section" id="redeem">
+      <h2>Redeem Your Credits</h2>
+      <form>
+        <label>Game ID: <input type="text" placeholder="Enter Game ID"></label><br><br>
+        <label>BTC Lightning Address: <input type="text" placeholder="Lightning Address"></label><br><br>
+        <label>Game System:
+          <select>
+            <option>Select Game</option>
+            <option>Golden Dragon</option>
+            <option>Fire Kirin</option>
+            <option>Milky Way</option>
+            <option>Panda Master</option>
+            <option>River Sweeps</option>
+            <option>Orion Stars</option>
+            <option>Magic City</option>
+            <option>Ultra Panda</option>
+            <option>VBlink</option>
+            <option>Juwa</option>
+          </select>
+        </label><br><br>
+        <label>Redeem Amount ($20 increments): <input type="number" min="20" step="20" placeholder="$20 Minimum"></label><br>
+        <button type="submit">Redeem Now</button>
+      </form>
+      <div class="info">
+        <b>Redemption Limits:</b> $20-$250 per cash out, 2 per day.<br>
+        <b>Processing Fee:</b> 4%.<br>
+        <b>Operating Hours: </b> 1PM-2AM Eastern<br>
+        <b>Bonus:</b> Get bonus credits on your first deposit!
+      </div>
+    </section>
+    <section class="howto-section">
+      <h2>How to Get Paid Instantly (Step by Step)</h2>
+      <div class="howto-videos">
+        <div class="howto-video">
+          <div>CashApp Redeem</div>
+          <iframe src="https://www.youtube.com/embed/_mTpO3upo7w" allowfullscreen title="CashApp Guide"></iframe>
+        </div>
+        <div class="howto-video">
+          <div>Strike App Guide</div>
+          <iframe src="https://www.youtube.com/embed/EyU3yIWPak0" allowfullscreen title="Strike App Guide"></iframe>
+        </div>
+        <div class="howto-video">
+          <div>PayPal BTC</div>
+          <iframe src="https://www.youtube.com/embed/Y2oL9bqbxao" allowfullscreen title="PayPal BTC"></iframe>
+        </div>
+        <div class="howto-video">
+          <div>Coinbase Withdraw</div>
+          <iframe src="https://www.youtube.com/embed/FPXtY_SjezA" allowfullscreen title="Coinbase Withdraw"></iframe>
+        </div>
+        <div class="howto-video">
+          <div>Bonus: Fastest Method</div>
+          <iframe src="https://www.youtube.com/embed/ad7xma_L95Y" allowfullscreen title="Your Guide"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 SamsGamingZone.com &bull; Play Responsibly &bull; Entertainment Only
+  </footer>
+</body>
+</html>
