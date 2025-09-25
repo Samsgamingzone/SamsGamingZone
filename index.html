@@ -10,6 +10,7 @@
     header h1 { font-size: 2.5rem; color: #ffeded; margin: 0 0 0.6em 0; font-weight: bold; }
     .cta-btn { background: #ff2525; color: #fff; border: none; border-radius: 32px; font-size: 1.25rem; padding: 0.75em 2em; margin-top: 1em; cursor: pointer; font-weight: bold; box-shadow: 0 0 12px #b20000; }
     .cta-btn:hover { background: #c50808; }
+    .deposit-row { display:flex;justify-content:center;gap:1.3em;margin:2em 0; }
     main { max-width: 900px; margin: 2em auto; background: rgba(40,0,0,0.86); padding: 2em 1em 2em; border-radius: 18px; box-shadow: 0 0 32px #9e141592; }
     .games-list ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 1.2em; }
     .games-list li { background: #2a1010; color: #ffdada; border-radius: 1em; padding: 0.55em 1.3em; font-weight: 600; box-shadow: 0 0 6px #ff252564; }
@@ -31,6 +32,9 @@
     <h1>SamsGamingZone.com</h1>
     <div>Experience the Rush—Play, Win, Redeem Instantly!</div>
     <button class="cta-btn" onclick="window.scrollTo({top:700,behavior:'smooth'})">Start Playing Now</button>
+    <div class="deposit-row">
+      <a href="deposit.html" class="cta-btn">Deposit</a>
+    </div>
   </header>
   <main>
     <section class="games-list">
@@ -42,14 +46,6 @@
         <li>Juwa</li>
       </ul>
     </section>
-    
-    <!-- BTC Lightning Address (displayed above redeem form) -->
-    <div style="margin:1em 0; color:#ffc; background:#241414; padding:1em 0.9em; border-radius:11px;">
-      <b>Your Deposit BTC Lightning Address:</b>
-      <span style="word-break:break-all; font-family:monospace;">bc1qq2nlx5zk4fly2s9dncptsjg8x7mwfcpcapgcmj79ktufj2fk8qwq07l35k</span>
-      <button onclick="navigator.clipboard.writeText('bc1qq2nlx5zk4fly2s9dncptsjg8x7mwfcpcapgcmj79ktufj2fk8qwq07l35k');" style="margin-left:10px; border-radius:6px; padding:3px 9px; border:none; color:#fff; background:#a00; cursor:pointer;">Copy</button>
-    </div>
-    
     <section class="redeem-section" id="redeem">
       <h2>Redeem Your Credits</h2>
       <form>
@@ -67,10 +63,6 @@
         <label>Redeem Amount ($20 increments): <input type="number" min="20" step="20" placeholder="$20 Minimum"></label><br>
         <button type="submit">Redeem Now</button>
       </form>
-      <!-- PayLightning deposit button -->
-      <a href="https://paylightning.io/deposit/game-id/acct_mfiz1pnyRGb8289z" target="_blank" class="cta-btn" style="display:inline-block;margin-top:1em;text-decoration:none;">
-        Deposit Instantly with PayLightning
-      </a>
       <div class="info">
         <b>Redemption Limits:</b> $20-$250 per cash out, 2 per day.<br>
         <b>Processing Fee:</b> 4%.<br>
