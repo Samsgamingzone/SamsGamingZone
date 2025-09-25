@@ -9,6 +9,8 @@
     .main-box { max-width: 520px; margin: 3em auto; background: #2a1010; border-radius: 18px; padding: 2em 1em; box-shadow: 0 0 32px #9e14156c; }
     .cta-btn { background: #ff2525; color: #fff; padding: 0.8em 2.2em; border: none; border-radius: 32px; font-size: 1.17rem; margin-top: 1em; font-weight: bold; box-shadow: 0 0 12px #b20000; }
     .cta-btn:hover { background: #c50808; }
+    select, input[type="text"] { margin: 1em 0; padding: 0.6em; border-radius: 7px; border: none; background: #291927; color: #fff; min-width: 210px; font-size: 1rem;}
+    label { display:block; margin-bottom:11px; font-size:1rem; color:#ffdada;}
   </style>
 </head>
 <body>
@@ -19,6 +21,22 @@
       <span style="word-break:break-all; font-family:monospace;">bc1qq2nlx5zk4fly2s9dncptsjg8x7mwfcpcapgcmj79ktufj2fk8qwq07l35k</span>
       <button onclick="navigator.clipboard.writeText('bc1qq2nlx5zk4fly2s9dncptsjg8x7mwfcpcapgcmj79ktufj2fk8qwq07l35k');" style="margin-left:10px; border-radius:6px; padding:3px 9px; border:none; color:#fff; background:#a00; cursor:pointer;">Copy</button>
     </div>
+    <form style="margin-top:2em;">
+      <label>
+        Game ID:
+        <input type="text" placeholder="Enter Game ID">
+      </label>
+      <label>
+        Game System:
+        <select>
+          <option>Select Game</option>
+          <option>Ultra Panda</option>
+          <option>Orion</option>
+          <option>Golden Dragon</option>
+          <option>Juwa</option>
+        </select>
+      </label>
+    </form>
     <a href="https://paylightning.io/deposit/game-id/acct_mfiz1pnyRGb8289z" target="_blank" class="cta-btn" style="display:block;margin:2em auto 0 auto;text-decoration:none;">
       Deposit Instantly with PayLightning
     </a>
