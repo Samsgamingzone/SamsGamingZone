@@ -3,28 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Deposit | SamsGamingZone.com</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { background: #171010; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; text-align:center;}
+    body { background: #171010; color: #fff; font-family: Arial, sans-serif; text-align: center; margin: 0; }
     .main-box { max-width: 520px; margin: 4em auto 0 auto; background: #2a1010; border-radius: 18px; padding: 2.4em 2em; box-shadow: 0 0 32px #9e14156c; }
-    .cta-btn { background: #ff2525; color: #fff; padding: 0.8em 2.2em; border: none; border-radius: 32px; font-size: 1.17rem; margin-top: 1em; font-weight: bold; box-shadow: 0 0 12px #b20000; cursor:pointer; }
-    .cta-btn:hover { background: #c50808; }
-    select, input[type="text"] { margin: 1em 0; padding: 0.6em; border-radius: 7px; border: none; background: #291927; color: #fff; min-width: 210px; font-size: 1rem;}
-    label { display:block; margin-bottom:13px; font-size:1rem; color:#ffdada;}
-    .btc-box { margin-bottom:2em; }
-    .btc-address { word-break:break-all; font-family:monospace; color:#ffe4e4; letter-spacing:0.03em; font-size:1.05em; }
-    .copy-btn { background:#e00; color:#fff; border:none; border-radius:6px; padding:3px 11px; font-size:0.95em; margin-left:10px; cursor:pointer;}
-    .copy-btn:hover { background:#b00;}
-    @media(max-width:600px){.main-box{padding:1em 2px;}}
+    h1 { margin-bottom: 0.6em; }
+    .btc-box { margin-bottom: 2em; }
+    .btc-address { word-break: break-all; font-family: monospace; color: #ffe4e4; font-size: 1.1em; }
+    .copy-btn { background: #e00; color: #fff; border: none; border-radius: 6px; padding: 5px 16px; margin-left: 10px; cursor: pointer; }
+    .copy-btn:hover { background: #b00; }
+    label { display: block; margin-bottom: 16px; font-size: 1.07em; color: #ffdada; }
+    input, select { margin: 1em 0; padding: 0.6em; border-radius: 7px; border: none; background: #291927; color: #fff; min-width: 210px; font-size: 1em; }
+    .cta-btn { background: #ff2525; color: #fff; padding: 0.9em 2.2em; border: none; border-radius: 32px; font-size: 1.17rem; margin-top: 1.7em;
+      font-weight: bold; box-shadow: 0 0 12px #b20000; cursor: pointer; display: block; margin-left: auto; margin-right: auto;}
+    .cta-btn:hover { background: #c50808;}
+    @media(max-width:600px) { .main-box{padding:1.2em 3px;} }
   </style>
 </head>
 <body>
   <div class="main-box">
-    <h1 style="margin-bottom:0.6em;">Deposit</h1>
+    <h1>Deposit</h1>
     <div class="btc-box">
       <div><b>Your Deposit BTC Lightning Address:</b></div>
       <span class="btc-address" id="btcAddr">bc1qq2nlx5zk4fly2s9dncptsjg8x7mwfcpcapgcmj79ktufj2fk8qwq07l35k</span>
-      <button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('btcAddr').textContent);">Copy</button>
+      <button type="button" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('btcAddr').textContent);">Copy</button>
     </div>
     <form>
       <label>
@@ -42,7 +44,7 @@
         </select>
       </label>
     </form>
-    <a href="https://paylightning.io/deposit/game-id/acct_mfiz1pnyRGb8289z" target="_blank" class="cta-btn" style="display:block;margin:2.2em auto 0 auto;text-decoration:none;">
+    <a href="https://paylightning.io/deposit/game-id/acct_mfiz1pnyRGb8289z" target="_blank" class="cta-btn">
       Deposit Instantly with PayLightning
     </a>
   </div>
