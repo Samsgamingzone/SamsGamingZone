@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deposit | SamsGamingZone.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { background: #171010; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; text-align:center;}
+    .main-box { max-width: 520px; margin: 3em auto; background: #2a1010; border-radius: 18px; padding: 2em 1em; box-shadow: 0 0 32px #9e14156c; }
+    .cta-btn { background: #ff2525; color: #fff; padding: 0.8em 2.2em; border: none; border-radius: 32px; font-size: 1.17rem; margin-top: 1em; font-weight: bold; box-shadow: 0 0 12px #b20000; }
+    .cta-btn:hover { background: #c50808; }
+  </style>
+</head>
+<body>
+  <div class="main-box">
+    <h1>Deposit</h1>
+    <div>
+      <b>Your Deposit BTC Lightning Address:</b><br>
+      <span style="word-break:break-all; font-family:monospace;">bc1qq2nlx5zk4fly2s9dncptsjg8x7mwfcpcapgcmj79ktufj2fk8qwq07l35k</span>
+      <button onclick="navigator.clipboard.writeText('bc1qq2nlx5zk4fly2s9dncptsjg8x7mwfcpcapgcmj79ktufj2fk8qwq07l35k');" style="margin-left:10px; border-radius:6px; padding:3px 9px; border:none; color:#fff; background:#a00; cursor:pointer;">Copy</button>
+    </div>
+    <a href="https://paylightning.io/deposit/game-id/acct_mfiz1pnyRGb8289z" target="_blank" class="cta-btn" style="display:block;margin:2em auto 0 auto;text-decoration:none;">
+      Deposit Instantly with PayLightning
+    </a>
+  </div>
+</body>
+</html>
